@@ -159,3 +159,12 @@ body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 
   .site-nav a:hover {
     text-decoration: underline;
   }
+  .controls {
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .controls select {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin-left: 4px;
+  }
