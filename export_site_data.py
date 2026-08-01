@@ -26,7 +26,7 @@ def changes_at_positions(family_name, positions):
 
 # --- Build the data structure for the website ---
 positions = {445, 478, 487, 346, 444}
-families = ["XFG", "PQ", "NB"]
+families = ["XFG", "PQ", "NB", "NY", "XFY"]
 
 # We want, per positoin, per family: which changes and what % of that family
 export = {}

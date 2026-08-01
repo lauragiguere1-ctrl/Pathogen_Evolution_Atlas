@@ -29,6 +29,26 @@
           "pct": 7.7
         }
       ]
+    },
+    "NY": {
+      "n": 10,
+      "changes": [
+        {
+          "change": "S:R346T",
+          "count": 10,
+          "pct": 100.0
+        }
+      ]
+    },
+    "XFY": {
+      "n": 9,
+      "changes": [
+        {
+          "change": "S:R346T",
+          "count": 9,
+          "pct": 100.0
+        }
+      ]
     }
   },
   "444": {
@@ -49,6 +69,26 @@
     "NB": {
       "n": 13,
       "changes": []
+    },
+    "NY": {
+      "n": 10,
+      "changes": [
+        {
+          "change": "S:K444R",
+          "count": 1,
+          "pct": 10.0
+        }
+      ]
+    },
+    "XFY": {
+      "n": 9,
+      "changes": [
+        {
+          "change": "S:K444R",
+          "count": 9,
+          "pct": 100.0
+        }
+      ]
     }
   },
   "445": {
@@ -91,6 +131,26 @@
           "pct": 100.0
         }
       ]
+    },
+    "NY": {
+      "n": 10,
+      "changes": [
+        {
+          "change": "S:V445R",
+          "count": 10,
+          "pct": 100.0
+        }
+      ]
+    },
+    "XFY": {
+      "n": 9,
+      "changes": [
+        {
+          "change": "S:V445R",
+          "count": 9,
+          "pct": 100.0
+        }
+      ]
     }
   },
   "478": {
@@ -128,6 +188,26 @@
           "pct": 7.7
         }
       ]
+    },
+    "NY": {
+      "n": 10,
+      "changes": [
+        {
+          "change": "S:T478K",
+          "count": 8,
+          "pct": 80.0
+        }
+      ]
+    },
+    "XFY": {
+      "n": 9,
+      "changes": [
+        {
+          "change": "S:T478K",
+          "count": 9,
+          "pct": 100.0
+        }
+      ]
     }
   },
   "487": {
@@ -148,6 +228,20 @@
     "NB": {
       "n": 13,
       "changes": []
+    },
+    "NY": {
+      "n": 10,
+      "changes": []
+    },
+    "XFY": {
+      "n": 9,
+      "changes": [
+        {
+          "change": "S:N487D",
+          "count": 9,
+          "pct": 100.0
+        }
+      ]
     }
   }
 }
