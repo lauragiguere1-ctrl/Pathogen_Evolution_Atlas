@@ -50,3 +50,14 @@ htmlcov/
 
 # Logs
 *.log
+
+# Large generated/downloaded analysis artifacts (regenerable, too big for Git)
+nextclade
+nextclade_output/
+data/nextclade_sars/
+all_samples.fasta
+all_samples.sam
+sample_one.fasta
+sample_one.sam
+mutation_calls.json
+*.sam
