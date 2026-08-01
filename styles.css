@@ -145,3 +145,17 @@ body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 
     text-align: center;
     line-height: 22px;
   }
+  .site-nav {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  .site-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #4a90d9;
+    font-weight: bold;
+  }
+  .site-nav a:hover {
+    text-decoration: underline;
+  }
