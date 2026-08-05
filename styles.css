@@ -4,6 +4,14 @@ body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 
     border-left: 1.5px solid #090909;
     padding: 20px 24px;
   }
+  .intro {
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .intro p {
+    margin-bottom: 14px;
+  }
   h2 { margin-bottom: 4px; }
   .row { margin: 12px 0; }
   .label { font-weight: bold; margin-bottom: 4px; }

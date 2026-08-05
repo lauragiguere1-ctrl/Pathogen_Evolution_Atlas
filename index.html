@@ -19,7 +19,13 @@
   <a href="references.html">References</a>
 </nav>
 <h1>Pathogen Evolution Atlas</h1>
-<p class="intro">XFG's distinguishing spike mutations versus its closest relatives (PQ, NB).</p>
+<div class="intro">
+  <p>The <strong>Pathogen Evolution Atlas</strong> tracks the molecular evolution of SARS-CoV-2 using publicly available genome sequences. This analysis focuses on XFG, a recombinant of the Omicron lineages LF.7 and LP.8.1.2 that emerged in early 2025 and rose rapidly to become one of the most prevalent variants worldwide, spreading to more than 88 countries and prompting the WHO to designate it a Variant Under Monitoring. Its defining spike mutations fall at positions associated with antibody escape — though, importantly, WHO assessments have found it does not cause more severe disease than other circulating variants, and current vaccines remain effective against it.</p>
+
+  <p>That combination — rapid spread and antibody-escape mutations, without increased severity — makes XFG a useful case study in how a successful recombinant lineage distinguishes itself. This analysis draws on 300 SARS-CoV-2 genomes from GenBank, aligned and lineage-typed with standard tools (minimap2, pysam, Nextclade), to ask: which spike mutations set XFG apart from its closest relatives, and where do they sit on the protein?</p>
+
+  <p>The five positions examined fall into three categories: mutations XFG acquired as a recombinant (N487D, V445R), a residue it conserved while relatives diverged (T478K), and mutations inherited from its LF.7 ancestry (R346T, K444R). The figures below compare XFG against related lineages position by position, and map these positions onto the receptor-binding domain — the region of the spike that contacts the ACE2 receptor. Use the dropdown to compare XFG against different lineages.</p>
+
 <div class="controls">
   <label for="lineage-select">Compare XFG against: </label>
   <select id="lineage-select">
@@ -85,12 +91,12 @@
     });
       
     const captions = [
-      "Position 487 (N487D): XFG carries N487D in 100% of sampled genomes-a mutation it acquired as a recombinant lineage, beyond its LF.7 parent. PQ and NB show no change here, retaining the ancestral asparagine. N487 sits within the receptor-binding motif, at a residue that is know to contact the ACE2 receptor, making this one of XFG's most distinctive markers.",
+      "Position 487 (N487D): XFG carries N487D in 100% of sampled genomes - a mutation it acquired as a recombinant lineage, beyond its LF.7 parent. PQ and NB show no change here, retaining the ancestral asparagine. N487 sits within the receptor-binding motif, at a residue that is known to contact the ACE2 receptor, making this one of XFG's most distinctive markers.",
       "Position 445 (V445R): All three lineages mutate position 445, but to different residues—XFG to arginine (V445R), while PQ and NB converge on histidine (V445H). This is convergent evolution: the same site under selective pressure, resolved differently by each lineage.",
-      "Position 478 (T478K): XFG retains the ancestral lysine (T478K) in 100% of sampled genomes, while PQ and NB have diverged to isoleucine (T478I). Position 478 is hightly variable across recent JN.1 descendants, so XFG's conservation here distinguishes it from its close relatives—an example of XFG standing still while others changed.",
+      "Position 478 (T478K): XFG retains the ancestral lysine (T478K) in 100% of sampled genomes, while PQ and NB have diverged to isoleucine (T478I). Position 478 is highly variable across recent JN.1 descendants, so XFG's conservation here distinguishes it from its close relatives—an example of XFG standing still while others changed.",
       "Position 346 (R346T): XFG carries R346T, an escape mutation inherited from its LF.7 lineage. Its relatives largely lack this change—PQ retains the ancestral residue in most genomes, and NB carries a different substitution (R346K)—reflecting their separate lineage origins.",
       "Position 444 (K444R): XFG carries K444R in nearly all sampled genomes, another escape mutation from its LF.7 ancestry. PQ and NB retain the ancestral residue at this antibody-binding position, distinguishing XFG here.",
-      "RBD position map: The five distinguishing positions mapped onto the spike receptor-binding domain (RBD, residues 333-526). Four of the five fall within or adjacent to the receptor-binding domain (RBD, residues 333-526). Four of the five fall within or adjacent to the receptor-binding motif (RBM, 438-506), the region that makes contact with the ACE2 receptor and concentrates antibody-escape pressure—indicating XFG's distinguishing changes are focused at the functional binding interface."
+      "RBD position map: The five distinguishing positions mapped onto the spike receptor-binding domain (RBD, residues 333-526). Several fall within the receptor-binding motif (RBM, 438-506), the region that contacts the ACE2 receptor and concentrates antibody-escape pressure, while position 346 sits in the RBD core—indicating XFG's distinguishing changes are largely focused at the functional binding interface."
     ]
   function redraw(comparisonLineage) {
     const figures = document.getElementById("figures");
